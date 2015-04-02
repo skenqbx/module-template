@@ -1,0 +1,37 @@
+{
+  "name": "module-template",
+  "version": "0.90.0",
+  "description": "A template for node/io.js modules",
+  "keywords": [
+    "module",
+    "template"
+  ],
+  "author": {
+    "name": "name",
+    "email": "email"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git-url"
+  },
+  "private": true,
+  "dependencies": {
+  },
+  "optionalDependencies": {},
+  "devDependencies": {
+    "eslint": "0.18.0",
+    "istanbul": "0.3.13",
+    "mocha": "2.2.1",
+    "next-update": "0.7.4"
+  },
+  "scripts": {
+    "lint": "node_modules/.bin/eslint ./",
+    "test": "node_modules/.bin/eslint ./ && node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- ./test",
+    "update": "node_modules/.bin/next-update -k",
+    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm npm-debug.log"
+  },
+  "engines": {
+    "node": ">=0.10",
+    "npm": "~2.7.3"
+  }
+}
