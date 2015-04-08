@@ -6,6 +6,7 @@
     "module",
     "template"
   ],
+  "license": "MIT",
   "author": {
     "name": "name",
     "email": "email"
