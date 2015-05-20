@@ -19,6 +19,7 @@ Stability: 1 - Experimental
  - `npm test` - eslint + istanbul + mocha
  - `npm run lint` - eslint
  - `npm run update` - next-update
+ - `npm run log` - generate a markdown formatted changelog
  - `npm run clean` - rm `coverage/`, `node_modules`, `npm-debug.log`
 
 [**Download**](https://github.com/skenqbx/module-template/archive/master.zip)

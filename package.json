@@ -22,16 +22,18 @@
     "eslint": "0.21.2",
     "istanbul": "0.3.14",
     "mocha": "2.2.5",
-    "next-update": "0.7.6"
+    "next-update": "0.7.6",
+    "changelog42": "0.5.0"
   },
   "scripts": {
     "lint": "eslint ./",
     "test": "npm run lint && istanbul cover _mocha -- ./test",
     "update": "next-update -k",
+    "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm npm-debug.log"
   },
   "engines": {
-    "node": ">=0.10",
-    "npm": "~2.8.4"
+    "node": "~0.10.38",
+    "npm": "~2.10.0"
   }
 }
