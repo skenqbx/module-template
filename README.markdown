@@ -17,6 +17,7 @@ Stability: 1 - Experimental
 **package.json scripts**
 
  - `npm test` - eslint + istanbul + mocha
+ - `npm install` - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
  - `npm run lint` - eslint
  - `npm run update` - next-update
  - `npm run log` - generate a markdown formatted changelog
