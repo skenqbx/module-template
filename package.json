@@ -19,11 +19,11 @@
   "dependencies": {},
   "optionalDependencies": {},
   "devDependencies": {
-    "eslint": "0.21.2",
-    "istanbul": "0.3.14",
+    "changelog42": "0.5.0",
+    "eslint": "0.23.0",
+    "istanbul": "0.3.15",
     "mocha": "2.2.5",
-    "next-update": "0.7.6",
-    "changelog42": "0.5.0"
+    "next-update": "0.7.9"
   },
   "scripts": {
     "lint": "eslint ./",
@@ -31,10 +31,10 @@
     "update": "next-update -k",
     "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm npm-debug.log",
-    "postinstall": "echo '#!\/bin\/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit"
+    "postinstall": "echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit"
   },
   "engines": {
     "node": "~0.10.38",
-    "npm": "~2.10.0"
+    "npm": "~2.11.2"
   }
 }
