@@ -31,7 +31,7 @@
     "update": "next-update -k",
     "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm npm-debug.log",
-    "postinstall": "echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit"
+    "postinstall": "if test -d .git/hooks; then echo '#!\/bin\/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
   },
   "engines": {
     "node": "~0.10.38",
