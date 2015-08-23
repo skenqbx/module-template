@@ -1,6 +1,6 @@
 {
   "name": "module-template",
-  "version": "0.90.0",
+  "version": "1.0.0",
   "description": "A template for node/io.js modules",
   "keywords": [
     "module",
@@ -34,7 +34,7 @@
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
   },
   "engines": {
-    "node": "~0.10.38",
+    "node": ">= 0.10.40",
     "npm": "~2.11.2"
   }
 }
