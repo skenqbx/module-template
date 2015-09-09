@@ -17,6 +17,7 @@
     "no-multi-spaces": 2,
     "no-new-func": 2,
     "no-new-object": 2,
+    "no-path-concat": 2,
     "no-process-exit": 2,
     "no-redeclare": 2,
     "no-shadow": 1,
