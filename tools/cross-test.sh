@@ -10,7 +10,7 @@
 #
 # $ nvm install -s 0.10
 # $ nvm install iojs
-# $ nvm install -s 4.0
+# $ nvm install -s 4.1
 #
 
 source ~/.nvm/nvm.sh
@@ -21,5 +21,5 @@ node_modules/.bin/_mocha ./test
 nvm use iojs
 node_modules/.bin/_mocha ./test
 
-nvm use 4.0
+nvm use 4.1
 node_modules/.bin/_mocha ./test
