@@ -16,12 +16,14 @@
 
 source ~/.nvm/nvm.sh
 
-VERSIONS="0.10 iojs 4.2 5.0"
+VERSIONS="0.10 iojs 4.2.2 5.1"
 
 for v in $VERSIONS; do
     echo "#### run test with node version $v ####"
     nvm use "$v"
     if [ $? -eq 0 ]; then
+        rm -rf node_modules/
+        npm i
         node_modules/.bin/_mocha ./test
     else
         echo "Can't switch to node version $v"
