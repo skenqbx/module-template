@@ -20,8 +20,8 @@
   "optionalDependencies": {},
   "devDependencies": {
     "changelog42": "0.8.0",
-    "eslint": "1.10.1",
-    "istanbul": "0.4.0",
+    "eslint": "1.10.2",
+    "istanbul": "0.4.1",
     "mocha": "2.3.4",
     "next-update": "0.9.5"
   },
