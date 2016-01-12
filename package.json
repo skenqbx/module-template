@@ -22,13 +22,11 @@
     "changelog42": "0.8.0",
     "eslint": "1.10.3",
     "istanbul": "0.4.1",
-    "mocha": "2.3.4",
-    "next-update": "1.0.3"
+    "mocha": "2.3.4"
   },
   "scripts": {
     "lint": "eslint ./",
     "test": "npm run lint && istanbul cover _mocha -- ./test",
-    "update": "next-update -k",
     "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -f npm-debug.log",
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
