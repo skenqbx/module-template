@@ -22,7 +22,7 @@
     "changelog42": "0.8.0",
     "eslint": "2.1.0",
     "istanbul": "0.4.2",
-    "mocha": "2.3.4"
+    "mocha": "2.4.5"
   },
   "scripts": {
     "lint": "eslint ./",
