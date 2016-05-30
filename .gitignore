@@ -2,3 +2,5 @@ node_modules
 coverage
 *.log
 *.heapsnapshot
+.tags
+.DS_Store
