@@ -19,7 +19,6 @@ Stability: 1 - Experimental
  - `npm test` - eslint + istanbul + mocha
  - `npm install` - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
  - `npm run lint` - eslint
- - `npm run update` - next-update
  - `npm run log` - generate a markdown formatted changelog
  - `npm run clean` - rm `coverage/`, `node_modules`, `npm-debug.log`
 
