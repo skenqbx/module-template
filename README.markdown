@@ -1,6 +1,6 @@
 # module-template
 
-**_A template for node/io.js modules_**
+**_A template for Node.js modules_**
 
 ```
 Stability: 1 - Experimental
