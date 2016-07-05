@@ -21,12 +21,12 @@
   "devDependencies": {
     "changelog42": "0.9.0",
     "eslint": "3.0.0",
-    "istanbul": "0.4.4",
+    "nyc": "6.6.1",
     "mocha": "2.5.3"
   },
   "scripts": {
     "lint": "eslint ./",
-    "test": "npm run lint && istanbul cover _mocha -- ./test",
+    "test": "npm run lint && nyc --reporter=lcov --reporter=text-summary _mocha test/*.test.js",
     "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -f npm-debug.log",
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
