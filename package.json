@@ -28,7 +28,7 @@
     "lint": "eslint ./",
     "test": "npm run lint && nyc --reporter=lcov --reporter=text --reporter=text-summary _mocha ./test/*.test.js",
     "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
-    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -rf nyc_output/ && rm -f npm-debug.log",
+    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -rf .nyc_output/ && rm -f npm-debug.log",
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
   }
 }
