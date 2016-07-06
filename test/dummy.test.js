@@ -5,7 +5,7 @@ const assert = require('assert');
 const common = require('./common');
 
 
-suite('dummy', () => {
+suite('dummy', function() {
 
   suiteSetup((done) => done());
 
