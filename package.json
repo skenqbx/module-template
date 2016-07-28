@@ -21,7 +21,7 @@
   "devDependencies": {
     "changelog42": "0.9.0",
     "eslint": "3.1.1",
-    "nyc": "7.0.0",
+    "nyc": "7.1.0",
     "mocha": "2.5.3"
   },
   "scripts": {
