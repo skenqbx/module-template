@@ -22,7 +22,7 @@
     "changelog42": "0.9.0",
     "eslint": "3.2.2",
     "nyc": "7.1.0",
-    "mocha": "3.0.0"
+    "mocha": "3.0.1"
   },
   "scripts": {
     "lint": "eslint ./",
