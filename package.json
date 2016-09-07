@@ -21,8 +21,8 @@
   "devDependencies": {
     "changelog42": "0.9.0",
     "eslint": "2.11.0",
-    "eslint-rules": "https://github.com/magora-labs/eslint-rules.git#v1.0.0",
     "istanbul": "0.4.3",
+    "mgl-eslint-rules": "1.1.0",
     "mocha": "2.5.3"
   },
   "scripts": {
