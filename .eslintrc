@@ -24,7 +24,7 @@
     "no-process-exit": 2,
     "no-redeclare": 2,
     "no-shadow": 1,
-    "no-spaced-func": 2,
+    "func-call-spacing": ["error", "never"],
     "no-trailing-spaces": 2,
     "no-undef": 2,
     "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
