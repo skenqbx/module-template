@@ -1,5 +1,6 @@
 {
   "rules": {
+    "no-whitespace-before-property": 2,
     "no-cond-assign": 2,
     "no-console": 1,
     "no-constant-condition": 2,
