@@ -21,6 +21,7 @@
   "devDependencies": {
     "eslint": "3.14.1",
     "nyc": "10.1.2",
+    "mgl-eslint-rules": "1.1.0",
     "mocha": "3.2.0"
   },
   "scripts": {
