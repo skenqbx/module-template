@@ -1,6 +1,8 @@
 node_modules
 coverage
+.nyc_output
 *.log
 *.heapsnapshot
-.tags
 .DS_Store
+.tags
+doc/api

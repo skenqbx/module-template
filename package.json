@@ -1,6 +1,6 @@
 {
   "name": "module-template",
-  "version": "1.1.0",
+  "version": "0.0.0",
   "description": "A template for node/io.js modules",
   "keywords": [
     "module",
@@ -19,17 +19,15 @@
   "dependencies": {},
   "optionalDependencies": {},
   "devDependencies": {
-    "changelog42": "0.9.0",
-    "eslint": "2.11.0",
-    "istanbul": "0.4.3",
+    "eslint": "3.14.1",
+    "nyc": "10.1.2",
     "mgl-eslint-rules": "1.1.0",
-    "mocha": "2.5.3"
+    "mocha": "3.2.0"
   },
   "scripts": {
     "lint": "eslint ./",
-    "test": "npm run lint && istanbul cover _mocha -- ./test",
-    "log": "changelog42 --no-author --commit-url=https://github.com/skenqbx/module-template/commit",
-    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -f npm-debug.log",
+    "test": "npm run lint && nyc --exclude=node_modules --exclude=test --reporter=lcov --reporter=text --reporter=text-summary --reporter=json-summary _mocha ./test/*.test.js",
+    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -rf .nyc_output/ && rm -f npm-debug.log",
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
   }
 }
