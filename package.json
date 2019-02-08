@@ -20,6 +20,7 @@
   "optionalDependencies": {},
   "devDependencies": {
     "eslint": "5.13.0",
+    "eslint-plugin-node": "8.0.1",
     "nyc": "13.2.0",
     "mocha": "5.2.0"
   },
@@ -28,5 +29,8 @@
     "test": "npm run lint && nyc --exclude=node_modules --exclude=test --reporter=lcov --reporter=text --reporter=text-summary --reporter=json-summary _mocha ./test/*.test.js",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -rf .nyc_output/ && rm -f npm-debug.log",
     "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }

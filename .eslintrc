@@ -75,12 +75,18 @@
       "prefer": {
         "returns": "return"
       }
-    }]
+    }],
+    "node/exports-style": [1, "module.exports"],
+    "node/no-deprecated-api":1,
+    "node/no-extraneous-require":  2,
+    "node/no-unpublished-require": 2
   },
   "env": {
     "node": true,
     "es6": true
   },
+  "plugins": [ "node" ],
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
   "parserOptions": {
     "ecmaVersion": "2017"
   }
