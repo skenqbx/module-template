@@ -19,8 +19,8 @@
   "dependencies": {},
   "optionalDependencies": {},
   "devDependencies": {
-    "eslint": "4.6.1",
-    "nyc": "11.2.1",
+    "eslint": "5.13.0",
+    "nyc": "13.2.0",
     "mocha": "5.2.0"
   },
   "scripts": {
